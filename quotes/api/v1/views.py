@@ -9,11 +9,11 @@ from .serializers import QuoteSerializer
 import random
 
 #functiona_based views:
-@api_view(['GET'])
-def hello_drf(request):
-    return Response(data={"message":"hello world"},status=status.HTTP_200_OK)
+
 
 @api_view(['GET'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
 def generate_all(request, format=None):
     random_quotes = Quote.objects.all()
     serializer = QuoteSerializer(random_quotes, many=True)
