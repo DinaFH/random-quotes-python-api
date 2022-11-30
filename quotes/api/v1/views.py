@@ -28,7 +28,7 @@ def generate_random(request):
     random_id = random.randint(1, 10)
     quote_object=Quote.objects.get(pk=random_id)
     serializer = QuoteSerializer(quote_object)
-    
+
     #saving the number of times each quote was picked in a dictionary
     if random_id in my_dictionary:
         my_dictionary[random_id] = my_dictionary[random_id] + 1
