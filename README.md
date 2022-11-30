@@ -2,7 +2,8 @@
 ## Description:
 It is a django restframework project consists of two main apps :
 quotes & account.
-There are endpoints you can check them from postman collections bellow.
+There are four endpoints you can check them from postman collections bellow.
+The main endpoint allow authenticated user only to generate random quote and after number of calls become 10 it create a report in excel file of one sheet for number of times each quote was picked .
 Fixtures were used to load data from json file to django ORM .
 xlsxwriter package used to write excel file that shows the quote report.
 ## Installation:
