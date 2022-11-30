@@ -1,9 +1,10 @@
 # random-quotes-python-api
 ## Description:
 It is a django restframework project consists of two main apps :
-quotes & account.There are endpoints you can check them from postman collections.
-Fixtures were used to load data from json file to django orm .
-XlsxWriter package used to write excel file that shows the quote report.
+quotes & account.
+There are endpoints you can check them from postman collections bellow.
+Fixtures were used to load data from json file to django ORM .
+xlsxwriter package used to write excel file that shows the quote report.
 ## Installation:
 #### Installing Prerequisites:
 `sudo apt update `
